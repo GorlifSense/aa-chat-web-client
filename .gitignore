@@ -1,3 +1,6 @@
+#Browserify
+public/build
+
 # Logs
 logs
 *.log

@@ -18,3 +18,5 @@ rules:
   semi:
     - 2
     - always
+  strict:
+    - 2
