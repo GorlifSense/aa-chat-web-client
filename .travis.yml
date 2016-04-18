@@ -2,5 +2,7 @@ language: node_js
 node_js:
   - "5"
 notifications:
-  slack: weirdunicorn:zYbooEy22vfBloHorKZV5XPE
+  slack:
+    rooms:
+      weirdunicorn:zYbooEy22vfBloHorKZV5XPE#development
     on_success: change
