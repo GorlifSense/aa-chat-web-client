@@ -7,13 +7,14 @@
     "mocha": "./node_modules/.bin/mocha",
     "unstaged": "git status --porcelain",
     "beautify": "./node_modules/.bin/js-beautify",
-    "codeclimate": "CODECLIMATE_REPO_TOKEN= codeclimate < ./coverage/lcov.info",
-    "coverage": "open coverage/lcov-report/index.html",
+    "codeclimate": "./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec",
+    "coveragereport": "firefox coverage/lcov-report/index.html",
     "eslint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
     "build": "./node_modules/.bin/mkdirp public/build && ./node_modules/.bin/browserify lib/index.js -o public/build/app.js",
     "serve_public": "./node_modules/.bin/http-server public",
     "start": "npm run build && npm run serve_public",
-    "test": "npm run mocha"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -36,9 +37,9 @@
   "homepage": "https://github.com/GorlifSense/aa-chat-web-client#readme",
   "devDependencies": {
     "codeclimate-test-reporter": "^0.3.1",
-    "js-beautify": "^1.6.2",
     "eslint": "^2.7.0",
     "istanbul": "^0.4.3",
+    "js-beautify": "^1.6.2",
     "mocha": "^2.4.5",
     "pre-commit": "^1.1.2"
   },
