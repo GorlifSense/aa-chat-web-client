@@ -1,0 +1,36 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+  mocha: true
+  node: true
+extends: 'eslint:recommended'
+rules:
+  indent:
+    - 2
+    - 2
+  linebreak-style:
+    - 2
+    - unix
+  quotes:
+    - 2
+    - single
+  semi:
+    - 2
+    - always
+  strict:
+    - 2
+  valid-jsdoc:
+    - 1
+  global-require:
+    - 2
+  eqeqeq:
+    - 1
+  no-magic-numbers:
+    - 1
+  curly:
+    - 2
+  no-useless-concat:
+    - 1
+  callback-return:
+    - 1
