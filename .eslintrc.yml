@@ -20,3 +20,17 @@ rules:
     - always
   strict:
     - 2
+  valid-jsdoc:
+    - 1
+  global-require:
+    - 2
+  eqeqeq:
+    - 1
+  no-magic-numbers:
+    - 1
+  curly:
+    - 2
+  no-useless-concat:
+    - 1
+  callback-return:
+    - 1
